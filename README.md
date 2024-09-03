@@ -13,7 +13,7 @@
 
 ## Installation
 
-1. Download the `GM.exe` file from the [Releases](https://github.com/incatswetrust/GCM/releases/tag/v.1.0.0) page.
+1. Download the `GM.exe` file from the [Releases](https://github.com/incatswetrust/GCM/releases) page.
 2. Place the `GM.exe` file in a directory that's included in your system's PATH, or navigate to the directory containing the file in your terminal.
 3. Prepare Configuration File:
 * Create a `users.txt` file in the same directory as `GM.exe`.
