@@ -9,18 +9,17 @@ public class AddCommand : ICommand
     private readonly string _name;
     private readonly string _email;
 
-    public AddCommand(IUserRepository userRepository, string id, string name, string email)
+    public AddCommand(IUserRepository userRepository, string name, string email)
     {
         _userRepository = userRepository;
-        _id = id;
         _name = name;
         _email = email;
     }
 
     public void Execute()
     {
-        var user = new UserConfig(_id, _name, _email);
+        var user = new UserConfig(null, _name, _email);
         _userRepository.AddUser(user);
-        Console.WriteLine($"User {_name} <{_email}> added with ID {_id}.");
+        Console.WriteLine($"User {_name} <{_email}> added.");
     }
 }

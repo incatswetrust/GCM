@@ -3,14 +3,12 @@ using GitConfigManager;
 
 if (args.Length == 0)
 {
-    Console.WriteLine("Usage: GitConfigManager [command] [options]");
+    Console.WriteLine("Usage: GM [command] [options]");
     return;
 }
 
-var filePath = "users.txt";
-if (!File.Exists(filePath))
-    File.Create(filePath);
-var userRepository = new FileUserRepository(filePath);
+var databasePath = "users.db";
+var userRepository = new SQLiteUserRepository(databasePath);
 var commandFactory = new CommandFactory(userRepository);
 
 try

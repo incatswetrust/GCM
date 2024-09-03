@@ -22,8 +22,8 @@ public class CommandFactory
                 if (args.Length < 2) throw new ArgumentException("ID is required for sign command.");
                 return new SignCommand(_userRepository, args[1]);
             case "add":
-                if (args.Length < 4) throw new ArgumentException("ID, Name, and Email are required for add command.");
-                return new AddCommand(_userRepository, args[1], args[2], args[3]);
+                if (args.Length < 3) throw new ArgumentException("Name, and Email are required for add command.");
+                return new AddCommand(_userRepository, args[1], args[2]);
             case "remove":
                 if (args.Length < 2) throw new ArgumentException("ID is required for remove command.");
                 return new RemoveCommand(_userRepository, args[1]);
