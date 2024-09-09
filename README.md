@@ -15,17 +15,6 @@
 
 1. Download the `GM.exe` file from the [Releases](https://github.com/incatswetrust/GCM/releases) page.
 2. Place the `GM.exe` file in a directory that's included in your system's PATH, or navigate to the directory containing the file in your terminal.
-3. Prepare Configuration File:
-* Create a `users.txt` file in the same directory as `GM.exe`.
-* Add user profiles in the following format:
-```txt
-id:name:email
-```
-* Example `users.txt`:
-```txt
-1:Brian Warner:marlyn_manson@metal.com
-2:John Lowery:john5@guitar.com
-```
 
 ## Usage
 
@@ -40,7 +29,7 @@ To switch the global Git user configuration to a specific profile:
 
 To add a new user profile to the list:
 ```bash
-./GM add 3 "Evan Rachel Wood" "EwanWood@example.com"
+./GM add Oleksii oleksii@incatswetrust.dev
 ```
 
 ### Remove a User Profile
